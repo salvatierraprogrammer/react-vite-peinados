@@ -33,50 +33,6 @@ const Home = () => {
         fontFamily: "'Poppins', sans-serif",
       }}
     >
-      {/* Header */}
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          p: 2,
-          backgroundColor: "#8C52FE",
-          color: "#fff",
-        }}
-      >
-        <Box sx={{ display: "flex", alignItems: "center" }}>
-          <img
-            src={icon}
-            alt="Bella Luz Logo"
-            style={{
-              width: "100px",
-              height: "100px",
-              marginRight: "10px",
-              borderRadius: "50%",
-            }}
-          />
-          <Typography variant="h4" component="div" sx={{ fontWeight: "bold" }}>
-            Bella Luz
-          </Typography>
-        </Box>
-        <Box>
-          <Button color="inherit" sx={{ color: "#fff", marginRight: "10px", fontWeight: "bold" }}>
-            Servicios
-          </Button>
-          <Button
-            variant="contained"
-            sx={{
-              backgroundColor: "#FF69B4",
-              color: "#fff",
-              fontWeight: "bold",
-              "&:hover": { backgroundColor: "#FF1493" },
-            }}
-          >
-            Reserva tu cita
-          </Button>
-        </Box>
-      </Box>
-
       {/* Hero Section */}
       <Container
         sx={{
@@ -157,29 +113,6 @@ const Home = () => {
           ))}
         </Grid>
       </Container>
-
-      {/* Footer */}
-      <Box sx={{ textAlign: "center", py: 3, backgroundColor: "#8C52FE", color: "#fff" }}>
-        <Typography variant="body1" sx={{ mb: 1 }}>
-          Seguí nuestras redes:
-        </Typography>
-        <Button
-          startIcon={<Instagram />}
-          href="https://www.instagram.com/bella.luz10/"
-          target="_blank"
-          sx={{
-            color: "#fff",
-            fontSize: "1.2em",
-            transition: "color 0.3s ease-in-out",
-            "&:hover": { color: "#FF69B4" },
-          }}
-        >
-          Instagram
-        </Button>
-        <Typography variant="body2" sx={{ mt: 2 }}>
-          © 2024 Bella Luz. Todos los derechos reservados.
-        </Typography>
-      </Box>
     </Box>
   );
 };
