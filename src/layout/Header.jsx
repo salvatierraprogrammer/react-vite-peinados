@@ -5,7 +5,7 @@ import icon from "../assets/logo.jpeg";
 
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const whatsappNumber = "1128436335";
+  const whatsappNumber = "+5491128436335";
 
   const reservarCita = () => {
     const mensaje = `👋 ¡Hola! Estoy interesada en reservar una cita para el servicio. ¿Podrías brindarme más información? Gracias 😊`;

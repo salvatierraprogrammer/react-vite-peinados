@@ -22,7 +22,7 @@ const Hero = () => {
       height: { xs: "65vh", md: "85vh" }, // Altura adaptada según dispositivo
       backgroundImage: `url(${clienta})`,
       backgroundSize: "cover", // Ajuste de la imagen al contenedor
-      backgroundPosition: "top center", // Centra la cara y los detalles
+      backgroundPosition: { xs: "center right", md: "top right" }, // Centra la cara y los detalles
       color: "#fff",
       borderRadius: "10px", // Bordes redondeados
       overflow: "hidden", // Evita desbordes
