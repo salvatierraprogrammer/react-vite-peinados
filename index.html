@@ -1,13 +1,47 @@
 <!doctype html>
-<html lang="en">
+<html lang="es"> <!-- Cambio a 'es' para español, pero puedes usar 'en' si el contenido es en inglés -->
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bella Luz</title>
+    
+    <!-- Descripción del sitio para mejorar SEO -->
+    <meta name="description" content="Bella Luz es un salón de belleza especializado en tratamientos capilares, peinados, y mucho más. ¡Descubre la mejor versión de tu cabello!" />
+    
+    <!-- Autor -->
+    <meta name="author" content="Bella Luz" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/logo.jpeg" type="image/jpeg" />
+    
+    <!-- Título de la página -->
+    <title>Bella Luz - Salón de Belleza</title>
+    
+    <!-- Fuente Poppins de Google Fonts (opcional, si usas esta fuente en tu app) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    
+    <!-- Estilos globales (si los necesitas, por ejemplo, un reset de CSS básico) -->
+    <style>
+      /* Establecer márgenes y relleno de los elementos por defecto */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Body con una fuente global por defecto */
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #F8F4FF;
+        color: #4B0082;
+      }
+    </style>
   </head>
+
   <body>
+    <!-- Aquí se monta tu aplicación React -->
     <div id="root"></div>
+
+    <!-- Importar el archivo JavaScript principal de la app -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
