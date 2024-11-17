@@ -5,7 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 function ButtonWhatsapp() {
   const [open, setOpen] = useState(true); // Modal abierto por defecto
-  const phoneNumber = '1128436335'; // Número de teléfono de WhatsApp
+  const phoneNumber = '+5491128436335'; // Número de teléfono de WhatsApp
   const message = '¡Hola! Me gustaría coordinar una cita.'; // Mensaje inicial
 
   const handleClose = () => setOpen(false); // Cierra el modal

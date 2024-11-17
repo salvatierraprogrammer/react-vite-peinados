@@ -19,7 +19,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const ModalServicio = ({ open, selectedServicio, handleClose }) => {
   // Número de WhatsApp
-  const whatsappNumber = "1128436335";
+  const whatsappNumber = "+5491128436335";
 
   // Función para generar y abrir el enlace de WhatsApp
   const compartirEnWhatsApp = () => {
