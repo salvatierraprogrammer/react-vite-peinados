@@ -1,8 +1,6 @@
 import React from "react";
 import { Box, Button, Container, Typography, Grid, Card, CardMedia, CardContent } from "@mui/material";
-import { Instagram } from "@mui/icons-material";
-import icon from "../assets/logo.jpeg";
-import peinadosImg from "../assets/peinados.jpeg";
+import peinadosImg from "../assets/peinados.jpeg"; // Usa la imagen de fondo que desees
 
 // Asegúrate de que estas imágenes estén disponibles en la carpeta adecuada
 const biotinaImg = "https://elbazarnatural.com/blog/wp-content/uploads/2023/01/Cual-es-la-mejor-biotina-para-el-pelo.jpg";
@@ -10,7 +8,6 @@ const oroImg = "https://www.checkealo.pe/files/productos/6132/0bd82d91fd4103419f
 const plastificadoImg = "https://pbs.twimg.com/media/DngqNg1WwAIAXB1.jpg";
 const botoxImg = "https://mcmmedicinaestetica.com/wp-content/uploads/2024/04/botox.jpg";
 const keratinaImg = "https://dcdn.mitiendanube.com/stores/993/128/products/fb_img_16359474375411-ad4d5701e78f02e61316363920362664-1024-1024.jpg";
-
 
 const Home = () => {
   const servicios = [
@@ -25,7 +22,7 @@ const Home = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#F8F4FF",
+        backgroundColor: '#8C52FE',
         color: "#4B0082",
         minHeight: "100vh",
         display: "flex",
@@ -43,16 +40,28 @@ const Home = () => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          backgroundColor: "#8C52FE",
+          backgroundImage: `url(${peinadosImg})`, // Imagen de fondo
+          backgroundSize: "cover", // Asegura que la imagen cubra toda la sección
+          backgroundPosition: "center", // Centra la imagen
+          backgroundAttachment: "fixed", // Fija la imagen en el fondo cuando se hace scroll
+          color: "#fff", // Color del texto
+          borderRadius: "10px",
+          
         }}
       >
         <Typography
           variant="h3"
-          sx={{ fontWeight: "bold", color: "#fff", mb: 2, fontSize: { xs: "2em", md: "3em" } }}
+          sx={{
+            fontWeight: "bold",
+            color: "#fff",
+            mb: 2,
+            fontSize: { xs: "2em", md: "3em" },
+            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)", // Para mejorar la legibilidad sobre la imagen
+          }}
         >
           Calidad y Belleza para vos 🎀
         </Typography>
-        <Typography sx={{ mb: 4, fontSize: "1.2em", maxWidth: "600px", color: "#fff" }}>
+        <Typography sx={{ mb: 4, fontSize: "1.2em", maxWidth: "600px", color: "#fff", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}>
           Descubrí los mejores tratamientos para tu cabello. Sentite renovada y hermosa con nuestros servicios.
         </Typography>
         <Button
@@ -85,8 +94,8 @@ const Home = () => {
             <Grid item xs={12} sm={6} md={4} key={index}>
               <Card
                 sx={{
-                  backgroundColor: "#fff",
-                  color: "#4B0082",
+                  backgroundColor: '#FF69B4',
+                  color: "#fff",
                   borderRadius: "10px",
                   textAlign: "center",
                   boxShadow: "0px 4px 10px rgba(0,0,0,0.2)",
@@ -104,7 +113,7 @@ const Home = () => {
                   <Typography variant="h6" sx={{ fontWeight: "bold", mb: 1 }}>
                     {servicio.nombre}
                   </Typography>
-                  <Typography variant="body2" sx={{ color: "#4B0082" }}>
+                  <Typography variant="body2" sx={{ color: "#fff" }}>
                     {servicio.descripcion}
                   </Typography>
                 </CardContent>
