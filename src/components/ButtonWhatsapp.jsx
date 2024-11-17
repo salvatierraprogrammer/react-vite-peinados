@@ -58,9 +58,24 @@ function ButtonWhatsapp() {
           <Typography variant="body2" sx={{ mb: 1 }}>
           💣 <strong>Consultas sin Cargo</strong>
           </Typography>
-          <Typography variant="body2" sx={{ mb: 1 }}>
-            <strong>De Lunes a Sábado</strong> - 8:00 a 19:00 hs
-          </Typography>
+          <Typography
+  variant="body2"
+  sx={{
+    mb: 1,
+    textAlign: "center", // Centra horizontalmente
+    lineHeight: 1.5, // Mejora la separación entre líneas
+    fontSize: { xs: "0.9rem", md: "1rem" }, // Tamaño adaptable según pantalla
+  }}
+>
+  <Box component="span" sx={{ fontWeight: "bold", display: "inline-block" }}>
+    De Lunes a Viernes
+  </Box>
+  : 8 AM a 17:00 hs <br />
+  <Box component="span" sx={{ fontWeight: "bold", display: "inline-block" }}>
+    Sábado
+  </Box>
+  : 9 AM a 12 AM
+</Typography>
           <Typography variant="body2">
             ¡Hablemos por WhatsApp para coordinar una cita!
           </Typography>

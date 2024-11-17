@@ -30,6 +30,7 @@ body {
   min-height: 100vh;
   background-color: var(--primary-color);
   color: var(--text-color-dark);
+  overflow: auto;
 }
 
 a {
